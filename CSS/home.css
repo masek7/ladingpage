@@ -343,16 +343,16 @@ body{
     background-color: #3D2212;
 }
 .cama{
-    background-image: url(/Imagens/cama1.jpg);
+    background-image: url(Imagens/cama1.jpg);
     background-size: cover;
 }
 
 .armario{
-    background-image: url(/Imagens/guardaroupa.png);
+    background-image: url(Imagens/guardaroupa.png);
     background-size: cover;
 }
 .portas{
-    background-image: url(/Imagens/door.jpg);
+    background-image: url(Imagens/door.jpg);
     background-size: cover;
 }
 .nossosProdutos div{
