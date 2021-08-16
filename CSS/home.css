@@ -1,0 +1,444 @@
+*{
+    font-family: 'Poppins', sans-serif;box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body, a{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+    
+    
+}
+a{
+   
+    color: #f2f2f2;
+    text-decoration: none;
+}
+nav a:hover{
+    
+    border-radius: 5px;
+    background: #3D2212;
+}
+
+
+
+
+#Logo{
+    margin-left: 4%;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#header{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    height: 70px;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background: #594031 ;
+}
+#menu{
+    transition: all 0.4s ease;
+    display: flex;
+    list-style:none;
+    gap: .5rem;
+}
+
+#menu a{
+    font-size: 1.2rem;
+    display: block;
+    padding: .5rem;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+nav ul li a{
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+   
+   
+
+
+/*---------FIM MENU------------*/
+
+
+
+
+
+
+body{
+    width: 100%;
+    background-color:#D9D0C7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+
+
+
+
+
+
+/*-----------BOTÕES MENU---------*/
+
+
+
+
+/*------SOBRE------*/
+
+
+
+
+/*---Primeira Parte da landing page---*/
+
+.primeira_parte{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.textos{
+
+    color: #54301C;
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 10%;
+}
+
+.textos h1{
+    font-size: 70px;
+    width: 790px;
+}
+
+.textos p{
+    color: #A6938F;
+    font-size: 35px;
+    width: 640px;
+    margin-top: 1%;
+    
+}
+
+.imagens{
+    margin:7%;
+
+   
+}
+
+#btn-produtos{
+    width: 200px ;
+    height: 50px;
+    background-color: #A6938F ;
+    border-radius: 25px;
+    font-size: 25px;
+    color: #54301C ;
+    border-style: none;
+    cursor: pointer;
+}
+
+/*-------------Sobre nos --------------*/
+.sobreNos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10.5%;
+    
+}
+
+.textos2{
+    
+    color: #54301C;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 10%;
+}
+.textos2 h1{
+    font-size: 80px;
+    line-height:initial;
+    width: 790px;
+    
+}
+
+.textos2 p{
+    color: #A6938F;
+    font-size: 35px;
+     width: 640px;
+     line-height: initial;
+}
+
+
+
+/*---Slider---*/
+.slide{
+    
+    margin-top: 10%;
+    width: 1280px;
+    height: 759px;
+    overflow: hidden;
+    transition: all 0.4s;
+    box-shadow: 16px 16px 0px 0px rgba(166, 147, 143, 1);
+        
+}
+
+.slide h2{
+    color: #3D2212;
+}
+.slides{
+    
+    display: flex;
+    align-items: center;
+    width: 5120px;
+    
+}
+
+.images img{
+  
+   width:1280px;
+   height: 759px;
+    
+
+}
+#atual{
+    transition: all 2s;
+}
+.btn{
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7em;
+    
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+#voltar{
+    left: 7%;
+}
+#avancar{
+    right: 7%;
+}
+
+/*----- removendo arrows em displays de notebooks e ajustando algumas imagnes 
+-*/
+@media only screen and (max-width:1600px) and (min-width:1325px){
+    #voltar,#avancar{
+        display: none;
+    }
+
+    .primeira_parte .imagens{
+        margin: 3%;
+    }
+    #freepik_stories-build-your-home{
+        width: 620px;
+        height: 465px;
+    }
+
+}
+
+
+@media only screen and (min-width:1300px) {
+    .slideMobile{
+        display: none;
+    }
+    
+}
+
+.balls{
+    position: absolute;
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+}
+
+.balls div{
+    transition: all 0.5s;
+    padding: 6px;
+    border-radius: 50%;
+    border: 3px solid #54301C;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+.balls div:hover{
+    background: #D9D0C7;
+}
+
+.imgAtual{
+    background: #D9D0C7;
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+/*---Terceira parte da lading page---*/
+.terceiraParte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10%;
+    width: 1595px;
+    height: 760px;
+
+
+
+}
+.terceiraParte h2{
+    font-size: 45px;
+
+    color: #54301C;
+}
+.nossosProdutos{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-gap:  80px;
+    justify-content: space-around;
+   
+
+}
+
+@media only screen and (min-width:1800px){
+    .nossosProdutos{
+        grid-template-columns: 500px 500px 500px;
+    }
+}
+.armario, .portas, .cama{
+    border-radius: 10px;
+    background-color: #3D2212;
+}
+.cama{
+    background-image: url(/Imagens/cama1.jpg);
+    background-size: cover;
+}
+
+.armario{
+    background-image: url(/Imagens/guardaroupa.png);
+    background-size: cover;
+}
+.portas{
+    background-image: url(/Imagens/door.jpg);
+    background-size: cover;
+}
+.nossosProdutos div{
+
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    background-color: rgba(84, 48, 28, 0.8);
+
+    color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 380px;
+    
+    
+    
+}
+
+.portas div{
+    height: 50%;
+    padding: 5%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.cama div{
+    height: 50%;
+    padding: 5%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.armario div{
+    height: 50%;
+    padding: 5%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nossosProdutos p{
+    color:#F2F2F2;
+}
+
+
+/*--------------FOOTER--------------------*/
+footer{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+    background-color: #594031;
+}
+
+
+
+.icons{
+    width: 100%;
+    color: #D9D0C7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+footer ul li{
+    color: #D9D0C7;
+    list-style: none;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: #D9D0C7;
+}
+
+footer div{
+    color: #D9D0C7;
+}
+
+
+
+
+
+
+/*-----------Animação SVG - Primeira Parte -----------*/
+
+svg#freepik_stories-build-your-home:not(.animated) .animable {opacity: 0;}svg#freepik_stories-build-your-home.animated #freepik--background-simple--inject-16 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideUp;animation-delay: 0s;}svg#freepik_stories-build-your-home.animated #freepik--Floor--inject-16 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideDown;animation-delay: 0s;}svg#freepik_stories-build-your-home.animated #freepik--Plants--inject-16 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideDown;animation-delay: 0s;}svg#freepik_stories-build-your-home.animated #freepik--Clouds--inject-16 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) fadeIn;animation-delay: 0s;}svg#freepik_stories-build-your-home.animated #freepik--thecnical-drawing--inject-16 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideDown;animation-delay: 0s;}svg#freepik_stories-build-your-home.animated #freepik--Hammer--inject-16 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideRight;animation-delay: 0s;}svg#freepik_stories-build-your-home.animated #freepik--Saw--inject-16 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) zoomOut;animation-delay: 0s;}svg#freepik_stories-build-your-home.animated #freepik--measuring-tape--inject-16 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideLeft;animation-delay: 0s;}svg#freepik_stories-build-your-home.animated #freepik--character-1--inject-16 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideLeft;animation-delay: 0s;}svg#freepik_stories-build-your-home.animated #freepik--character-2--inject-16 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideRight;animation-delay: 0s;}            @keyframes slideUp {                0% {                    opacity: 0;                    transform: translateY(30px);                }                100% {                    opacity: 1;                    transform: inherit;                }            }                    @keyframes slideDown {                0% {                    opacity: 0;                    transform: translateY(-30px);                }                100% {                    opacity: 1;                    transform: translateY(0);                }            }                    @keyframes fadeIn {                0% {                    opacity: 0;                }                100% {                    opacity: 1;                }            }                    @keyframes slideRight {                0% {                    opacity: 0;                    transform: translateX(30px);                }                100% {                    opacity: 1;                    transform: translateX(0);                }            }                    @keyframes zoomOut {                0% {                    opacity: 0;                    transform: scale(1.5);                }                100% {                    opacity: 1;                    transform: scale(1);                }            }                    @keyframes slideLeft {                0% {                    opacity: 0;                    transform: translateX(-30px);                }                100% {                    opacity: 1;                    transform: translateX(0);                }            }        
